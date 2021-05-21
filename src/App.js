@@ -1,18 +1,27 @@
-import logo from './logo.svg';
-import './styles/App.css';
+import React, { Fragment } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./styles/App.css";
 
-import Header from "./components/Header"
-import Footer from "./components/Footer"
-import Intro from "./components/Intro"
-import Main from "./components/Main"
-// import Intro from "./components/Intro"
+import Header from "./components/Header";
+import Home from "./pages/HomePage";
+import About from "./pages/AboutPage";
+import Services from "./pages/ServicesPage";
+import Work from "./pages/WorkPage";
 
 function App() {
   return (
-    <div className="App">
-    <Header />
-    <Footer />
-    </div>
+    <Router>
+      <Fragment>
+        <Header />
+        {/* <Footer /> */}
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/work" component={Work} />
+          <Route path="/services" component={Services} />
+        </Switch>
+      </Fragment>
+    </Router>
   );
 }
 
