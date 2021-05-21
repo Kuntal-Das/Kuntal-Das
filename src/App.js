@@ -1,25 +1,26 @@
 import React, { Fragment } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./styles/App.css";
+import "./styles/App.scss";
 
 import Header from "./components/Header";
-import Home from "./pages/HomePage";
-import About from "./pages/AboutPage";
-import Services from "./pages/ServicesPage";
-import Work from "./pages/WorkPage";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ServicesPage from "./pages/ServicesPage";
+import WorkPage from "./pages/WorkPage";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <Router>
       <Fragment>
         <Header />
-        {/* <Footer /> */}
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/work" component={Work} />
-          <Route path="/services" component={Services} />
+          <Route path="/" exact component={HomePage} />
+          <Route path="/about" component={AboutPage} />
+          <Route path="/work" component={WorkPage} />
+          <Route path="/services" component={ServicesPage} />
         </Switch>
+        <Footer />
       </Fragment>
     </Router>
   );
