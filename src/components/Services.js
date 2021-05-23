@@ -33,7 +33,7 @@ const Services = (props) => (
         </p>
       </div>
     </div>
-    <Link to="/work">My Work</Link>
+    <Link className="btn" to="/work">My Work</Link>
   </section>
 );
 

@@ -21,6 +21,8 @@
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25);
 }
 
 body{
@@ -31,13 +33,41 @@ body{
   line-height: 1.6;
 }
 
+section{
+  padding: 5em 2em;
+}
+
 img{
   display: block;
   max-width: 100%;
 }
 
+.btn{
+  display: inline-block;
+  padding:0.5em 1.5em;
+  background-color: var(--clr-accent);
+  color: var(--clr-dark);
+  text-decoration:none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: transform 200ms ease-in-out;
+
+  &:hover,
+  &:focus{
+    transform: scale(1.05);
+  }
+}
+
+:focus {
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
+}
+
 h1,h2,h3{
-  line-height: 1.1;
+  line-height: 1;
 }
 
 h1 {font-size: var(--fs-h1)}
