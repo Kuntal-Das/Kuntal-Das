@@ -21,7 +21,8 @@ const About = (props) => (
       </p>
     </div>
     <img
-      src="https://source.unsplash.com/OhKElOkQ3RE/640x480"
+      className="about__img"
+      src="https://source.unsplash.com/OhKElOkQ3RE/640"
       alt="Kuntal Das smiling"
     />
   </section>

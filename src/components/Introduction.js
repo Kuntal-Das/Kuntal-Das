@@ -8,7 +8,7 @@ const Introduction = (props) => (
     <p className="section__subtitle section__subtitle--intro">front-end dev</p>
     <img
       className="intro__img"
-      src="https://source.unsplash.com/OhKElOkQ3RE/640x480"
+      src="https://source.unsplash.com/OhKElOkQ3RE/640"
       alt="Kuntal Das in skyblue shirt"
     />
   </section>
