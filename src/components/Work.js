@@ -4,127 +4,110 @@ import { Link } from "react-router-dom";
 const Work = (props) => (
   <section id="work" className="work">
     <h2 className="section__title section__title--work">My Work</h2>
-    <p className="section__subtitle"></p>
+    <p className="section__subtitle section__subtitle--work">
+      A Selection of my range of work
+    </p>
+
     {/* 00 */}
-    <p className="portfolio">
-      <Link to="/">
+    <div className="portfolio">
+      <Link to="/" className="portfolio__item">
         <img
           className="portfolio__img"
-          src="https://source.unsplash.com/640x480?webdesign"
+          src="https://source.unsplash.com/240x240?webdesign"
           alt=""
         />
       </Link>
-    </p>
 
-    {/* 01 */}
-    <p className="portfolio">
-      <Link to="/">
+      {/* 01 */}
+      <Link to="/" className="portfolio__item">
         <img
           className="portfolio__img"
-          src="https://source.unsplash.com/640x480?webdesign"
+          src="https://source.unsplash.com/240x240?webdesign"
           alt=""
         />
       </Link>
-    </p>
 
-    {/* 02 */}
-    <p className="portfolio">
-      <Link to="/">
+      {/* 02 */}
+      <Link to="/" className="portfolio__item">
         <img
           className="portfolio__img"
-          src="https://source.unsplash.com/640x480?webdesign"
+          src="https://source.unsplash.com/240x240?webdesign"
           alt=""
         />
       </Link>
-    </p>
 
-    {/* 03 */}
-    <p className="portfolio">
-      <Link to="/">
+      {/* 03 */}
+      <Link to="/" className="portfolio__item">
         <img
           className="portfolio__img"
-          src="https://source.unsplash.com/640x480?webdesign"
+          src="https://source.unsplash.com/240x240?webdesign"
           alt=""
         />
       </Link>
-    </p>
 
-    {/* 04 */}
-    <p className="portfolio">
-      <Link to="/">
+      {/* 04 */}
+      <Link to="/" className="portfolio__item">
         <img
           className="portfolio__img"
-          src="https://source.unsplash.com/640x480?webdesign"
+          src="https://source.unsplash.com/240x240?webdesign"
           alt=""
         />
       </Link>
-    </p>
 
-    {/* 05 */}
-    <p className="portfolio">
-      <Link to="/">
+      {/* 05 */}
+      <Link to="/" className="portfolio__item">
         <img
           className="portfolio__img"
-          src="https://source.unsplash.com/640x480?webdesign"
+          src="https://source.unsplash.com/240x240?webdesign"
           alt=""
         />
       </Link>
-    </p>
 
-    {/* 06 */}
-    <p className="portfolio">
-      <Link to="/">
+      {/* 06 */}
+      <Link to="/" className="portfolio__item">
         <img
           className="portfolio__img"
-          src="https://source.unsplash.com/640x480?webdesign"
+          src="https://source.unsplash.com/240x240?webdesign"
           alt=""
         />
       </Link>
-    </p>
 
-    {/* 07 */}
-    <p className="portfolio">
-      <Link to="/">
+      {/* 07 */}
+      <Link to="/" className="portfolio__item">
         <img
           className="portfolio__img"
-          src="https://source.unsplash.com/640x480?webdesign"
+          src="https://source.unsplash.com/240x240?webdesign"
           alt=""
         />
       </Link>
-    </p>
 
-    {/* 08 */}
-    <p className="portfolio">
-      <Link to="/">
+      {/* 08 */}
+      <Link to="/" className="portfolio__item">
         <img
           className="portfolio__img"
-          src="https://source.unsplash.com/640x480?webdesign"
+          src="https://source.unsplash.com/240x240?webdesign"
           alt=""
         />
       </Link>
-    </p>
 
-    {/* 09 */}
-    <p className="portfolio">
-      <Link to="/">
+      {/* 09 */}
+      <Link to="/" className="portfolio__item">
         <img
           className="portfolio__img"
-          src="https://source.unsplash.com/640x480?webdesign"
+          src="https://source.unsplash.com/240x240?webdesign"
           alt=""
         />
       </Link>
-    </p>
 
-    {/* 10 */}
-    <p className="portfolio">
-      <Link to="/">
+      {/* 10 */}
+      <Link to="/" className="portfolio__item">
         <img
           className="portfolio__img"
-          src="https://source.unsplash.com/640x480?webdesign"
+          src="https://source.unsplash.com/240x240?webdesign"
           alt=""
         />
       </Link>
-    </p>
+    </div>
   </section>
 );
 
