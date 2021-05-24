@@ -39,6 +39,7 @@
 }
 .section__subtitle--intro{
   display: inline-block;
+  position: relative;
 }
 
 @media(min-width:600px){
@@ -61,9 +62,19 @@
   }
   .section__subtitle--intro{
     align-self: start;
-    grid-column: 1 / -1;
-    grid-row:2;
-    text-align: right;
+    padding-left: 0;
+    padding-right: 0;
+
+    &::after{
+      content:"";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right:-1em;
+      background-color: var(--clr-accent);
+      width: calc(100% + 200px + 6em);
+      z-index: -1;
+    }
   }
 }
 

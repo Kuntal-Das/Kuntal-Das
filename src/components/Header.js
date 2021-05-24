@@ -5,11 +5,11 @@ import "../styles/header.scss";
 
 const Header = (props) => {
   const hamburger = useRef(null);
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isNavOpen, setIsNavClosed] = useState(false);
 
-  const toggleNav = () => setIsNavOpen((prevIsNavOpen) => !prevIsNavOpen);
+  const toggleNav = () => setIsNavClosed((prevIsNavOpen) => !prevIsNavOpen);
 
-  const closeNav = () => setIsNavOpen(false);
+  const closeNav = () => setIsNavClosed(false);
 
   useEffect(() => {
     const ham = hamburger.current;
