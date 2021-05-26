@@ -44,13 +44,12 @@ const Header = (props) => {
           </li>
           <li className="nav__item">
             <NavLink
-              to="/services"
-              // to="#services"
+              to="/work"
               activeClassName="current-page"
               className="nav__link"
               onClick={closeNav}
             >
-              My Services
+              My Work
             </NavLink>
           </li>
           <li className="nav__item">
@@ -65,12 +64,12 @@ const Header = (props) => {
           </li>
           <li className="nav__item">
             <NavLink
-              to="/work"
+              to="/contact"
               activeClassName="current-page"
               className="nav__link"
               onClick={closeNav}
             >
-              My work
+              contact me
             </NavLink>
           </li>
         </ul>

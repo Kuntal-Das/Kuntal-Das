@@ -12,7 +12,8 @@
 
   --fw-light: 300;
   --fw-reg: 400;
-  --fw-bold: 900;
+  --fw-bold: 700;
+  --fw-black: 900;
 
   --clr-light: #fff;
   --clr-dark: #303030;
@@ -58,7 +59,7 @@ img{
   text-decoration:none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-black);
   font-size: 0.8rem;
   cursor: pointer;
   transition: transform 200ms ease-in-out;

@@ -35,42 +35,6 @@ const Work = (props) => (
           alt=""
         />
       </Link>
-
-      {/* 03 */}
-      <Link to="/project/1" className="portfolio__item">
-        <img
-          className="portfolio__img"
-          src="https://source.unsplash.com/240x240?webdesign"
-          alt=""
-        />
-      </Link>
-
-      {/* 04 */}
-      <Link to="/project/1" className="portfolio__item">
-        <img
-          className="portfolio__img"
-          src="https://source.unsplash.com/240x240?webdesign"
-          alt=""
-        />
-      </Link>
-
-      {/* 05 */}
-      <Link to="/project/1" className="portfolio__item">
-        <img
-          className="portfolio__img"
-          src="https://source.unsplash.com/240x240?webdesign"
-          alt=""
-        />
-      </Link>
-
-      {/* 06 */}
-      {/* <Link to="/" className="portfolio__item">
-        <img
-          className="portfolio__img"
-          src="https://source.unsplash.com/240x240?webdesign"
-          alt=""
-        />
-      </Link> */}
     </div>
   </section>
 );

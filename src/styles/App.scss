@@ -4,7 +4,7 @@
     font-weight: var(--fw-light);
 
     strong{
-      font-weight: var(--fw-bold);
+      font-weight: var(--fw-black);
       display: block;
     } 
   }
@@ -23,7 +23,7 @@
 
   &--work {
     color: var(--clr-accent);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-black);
     margin-bottom: 2em;
   }
 }
