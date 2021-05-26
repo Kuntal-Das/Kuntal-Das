@@ -45,6 +45,7 @@ const Header = (props) => {
           <li className="nav__item">
             <NavLink
               to="/services"
+              // to="#services"
               activeClassName="current-page"
               className="nav__link"
               onClick={closeNav}

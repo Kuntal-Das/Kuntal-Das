@@ -10,7 +10,7 @@ const Work = (props) => (
 
     {/* 00 */}
     <div className="portfolio">
-      <Link to="/" className="portfolio__item">
+      <Link to="/project/1" className="portfolio__item">
         <img
           className="portfolio__img"
           src="https://source.unsplash.com/240x240?webdesign"
@@ -19,7 +19,7 @@ const Work = (props) => (
       </Link>
 
       {/* 01 */}
-      <Link to="/" className="portfolio__item">
+      <Link to="/project/1" className="portfolio__item">
         <img
           className="portfolio__img"
           src="https://source.unsplash.com/240x240?webdesign"
@@ -28,7 +28,7 @@ const Work = (props) => (
       </Link>
 
       {/* 02 */}
-      <Link to="/" className="portfolio__item">
+      <Link to="/project/1" className="portfolio__item">
         <img
           className="portfolio__img"
           src="https://source.unsplash.com/240x240?webdesign"
@@ -37,7 +37,7 @@ const Work = (props) => (
       </Link>
 
       {/* 03 */}
-      <Link to="/" className="portfolio__item">
+      <Link to="/project/1" className="portfolio__item">
         <img
           className="portfolio__img"
           src="https://source.unsplash.com/240x240?webdesign"
@@ -46,7 +46,7 @@ const Work = (props) => (
       </Link>
 
       {/* 04 */}
-      <Link to="/" className="portfolio__item">
+      <Link to="/project/1" className="portfolio__item">
         <img
           className="portfolio__img"
           src="https://source.unsplash.com/240x240?webdesign"
@@ -55,7 +55,7 @@ const Work = (props) => (
       </Link>
 
       {/* 05 */}
-      <Link to="/" className="portfolio__item">
+      <Link to="/project/1" className="portfolio__item">
         <img
           className="portfolio__img"
           src="https://source.unsplash.com/240x240?webdesign"
@@ -64,49 +64,13 @@ const Work = (props) => (
       </Link>
 
       {/* 06 */}
-      <Link to="/" className="portfolio__item">
+      {/* <Link to="/" className="portfolio__item">
         <img
           className="portfolio__img"
           src="https://source.unsplash.com/240x240?webdesign"
           alt=""
         />
-      </Link>
-
-      {/* 07 */}
-      <Link to="/" className="portfolio__item">
-        <img
-          className="portfolio__img"
-          src="https://source.unsplash.com/240x240?webdesign"
-          alt=""
-        />
-      </Link>
-
-      {/* 08 */}
-      <Link to="/" className="portfolio__item">
-        <img
-          className="portfolio__img"
-          src="https://source.unsplash.com/240x240?webdesign"
-          alt=""
-        />
-      </Link>
-
-      {/* 09 */}
-      <Link to="/" className="portfolio__item">
-        <img
-          className="portfolio__img"
-          src="https://source.unsplash.com/240x240?webdesign"
-          alt=""
-        />
-      </Link>
-
-      {/* 10 */}
-      <Link to="/" className="portfolio__item">
-        <img
-          className="portfolio__img"
-          src="https://source.unsplash.com/240x240?webdesign"
-          alt=""
-        />
-      </Link>
+      </Link> */}
     </div>
   </section>
 );

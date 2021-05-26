@@ -6,7 +6,12 @@ import Work from "../components/Work";
 
 const HomePage = (props) => (
   <Fragment>
-    <Introduction />
+    <Introduction
+      titleLight="Hi, I am"
+      titleBold="Kuntal Das"
+      subtitle="front-end dev"
+      imgSrc="https://source.unsplash.com/OhKElOkQ3RE/640x768"
+    />
     <Services />
     <About />
     <Work />

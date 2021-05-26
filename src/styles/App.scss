@@ -1,7 +1,7 @@
 .section__title{
   margin-bottom: 0.25rem;
   &--intro{
-    font-weight: var(--fw-reg);
+    font-weight: var(--fw-light);
 
     strong{
       font-weight: var(--fw-bold);
@@ -46,12 +46,13 @@
   .intro{
     display: grid;
     grid-column-gap: 1em;
+    max-width: 1000px;
     width: min-content;
     margin: 0 auto; 
     grid-template-areas: 
       "img title"
       "img subtitle";
-    grid-template-columns: min-content;
+    grid-template-columns: 250px 50ch;
 
     &__img{
       grid-area: img;

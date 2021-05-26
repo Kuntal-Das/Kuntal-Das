@@ -3,12 +3,15 @@ import React from "react";
 const Introduction = (props) => (
   <section id="home" className="intro">
     <h1 className="section__title section__title--intro">
-      Hi, I am <strong>Kuntal Das</strong>
+      {props.titleLight}
+      <strong>{props.titleBold}</strong>
     </h1>
-    <p className="section__subtitle section__subtitle--intro">front-end dev</p>
+    <p className="section__subtitle section__subtitle--intro">
+      {props.subtitle}
+    </p>
     <img
       className="intro__img"
-      src="https://source.unsplash.com/OhKElOkQ3RE/640"
+      src={props.imgSrc}
       alt="Kuntal Das in skyblue shirt"
     />
   </section>
