@@ -1,36 +1,40 @@
 import React, { Component } from "react";
 import { ThemeProvider } from "styled-components";
 import { HomePage } from "./pages";
-import { light, dark, getRadShadow } from "./colorScheme"
+import { getThemes } from "./colorScheme"
 
 class App extends Component {
   constructor(props) {
     super(props);
+    [this.light, this.dark] = getThemes()
     this.mql = window.matchMedia('(prefers-color-scheme: dark)')
     this.state = {
-      theme: { ...light },
-      radShadow: {
-        boxShadowDefault: `0 1rem .5rem -.5rem`,
-        boxShadow: getRadShadow(light.surfaceShadow, light.shadowStrength)
-      }
+      theme: { ...this.light },
     }
+  }
+
+  toggleColorScheme = () => {
+    this.setState(prevState => {
+      if (prevState.theme.name === "light") {
+        return ({ theme: { ...this.dark } })
+      }
+      return ({ theme: { ...this.light } })
+    })
   }
 
   handleSystemColorSchemeChange = (e) => {
     if (e.matches && this.state.theme.name === "light") {
       this.setState({
-        theme: { ...dark },
-        radShadow: getRadShadow(dark.surfaceShadow, dark.shadowStrength)
+        theme: { ...this.dark }
       })
     } else if (!e.matches && this.state.theme.name === "dark") {
       this.setState({
-        theme: { ...light },
-        radShadow: getRadShadow(light.surfaceShadow, light.shadowStrength)
+        theme: { ...this.light }
       })
     }
   }
 
-  componentDidMount() {
+  componentDidMount = () => {
     this.mql.addEventListener('change', this.handleSystemColorSchemeChange);
   }
 
@@ -38,14 +42,11 @@ class App extends Component {
     this.mql.removeEventListener('change', this.handleSystemColorSchemeChange);
   }
 
-  render = () => {
-    console.log(this.state)
-    return (
-      <ThemeProvider theme={{ ...this.state.theme }}>
-        <HomePage />
-      </ThemeProvider>
-    );
-  }
+  render = () => (
+    <ThemeProvider theme={{ ...this.state }}>
+      <HomePage />
+    </ThemeProvider>
+  );
 }
 
 export default App;
