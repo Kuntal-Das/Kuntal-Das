@@ -1,8 +1,8 @@
 export const getThemes = () => {
 	const foundation = {
 		brandHue: "235",
-		brandSaturation: `90%`,
-		brandLightness: `70%`
+		brandSaturation: `100%`,
+		brandLightness: `60%`
 	}
 
 	const lightTheme = {
@@ -22,7 +22,7 @@ export const getThemes = () => {
 	const darkTheme = {
 		id: "2",
 		name: "dark",
-		brand: `hsl(${foundation.brandHue} calc(${foundation.brandSaturation} / 2) calc(${foundation.brandLightness} / 1.5))`,
+		brand: `hsl(${foundation.brandHue} calc(${foundation.brandSaturation} / 1.25) calc(${foundation.brandLightness} * 1.25))`,
 		text1: `hsl(${foundation.brandHue} 15% 85%)`,
 		text2: `hsl(${foundation.brandHue} 5% 65%)`,
 		surface1: `hsl(${foundation.brandHue} 10% 10%)`,
@@ -34,12 +34,20 @@ export const getThemes = () => {
 	}
 
 	const fonts = {
-		FontPrimary: `'Poppins', sans-serif`,
-		FontHeading: `'Source Sans Pro', sans-serif`,
-		FWRegular: 400,
-		FWSemiBold: 600,
-		FWBold: 700,
-		FWBlack: 900,
+		ffPrimary: `'Source Sans Pro', sans-serif`,
+		ffHeading: `'Poppins', sans-serif`,
+		fwRegular: 400,
+		fwSemiBold: 600,
+		fwBold: 700,
+		fwBlack: 900,
+		fsRegular: "1rem",
+		fsMedium: "0.875rem",
+		fsSmall: "0.75rem",
+		fsH1: "3rem",
+		fsH2: "2.5rem",
+		fsH3: "1.75rem",
+		fsH5: "1.5rem"
+
 	}
 
 	const shadow = {
@@ -57,14 +65,17 @@ export const getThemes = () => {
 	)
 
 	const getTheme = (theme) => ({
-		...fonts,
 		...theme,
-		...shadow,
 		radShadow: getRadShadow(theme.surfaceShadow, theme.shadowStrength)
 	})
+
+	const fixed = {
+		...fonts,
+		...shadow,
+	}
 
 	const light = getTheme(lightTheme);
 	const dark = getTheme(darkTheme);
 
-	return [light, dark]
+	return [fixed, light, dark]
 }
