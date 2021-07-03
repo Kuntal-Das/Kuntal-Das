@@ -69,8 +69,8 @@ export const StyledHeader = styled.header.attrs(props => ({
         minmax(max-content,calc( ${maxWidth} / 2))
         minmax(1em, 1fr);`
     )};
-    background-color: ${({ theme }) => theme.surface1};
-    border: ${({ theme }) => theme.border};
+    background-color: ${({ theme }) => theme.surface2};
+    /* border: ${({ theme }) => theme.border}; */
     /* box-shadow: ${({ theme }) => theme.border}; */
     /* box-shadow: ${({ theme }) => theme.radShadow}; */
 
