@@ -22,7 +22,7 @@ class App extends Component {
         }
   }
 
-  toggleColorScheme = () => {
+  toggleColorScheme = (targetThemeName = "") => {
     this.setState(prevState => {
       if (prevState.theme.name === "light") {
         return ({ theme: { ...prevState.theme, ...this.dark } })
@@ -31,12 +31,25 @@ class App extends Component {
     })
   }
 
+  setColorScheme = (e) => {
+    if (e.matches) {
+      this.setState(prevState => ({
+        theme: { ...prevState.theme, ...this.dark },
+      }))
+    }
+    else {
+      this.setState(prevState => ({
+        theme: { ...prevState.theme, ...this.light },
+      }))
+    }
+  }
+
   componentDidMount = () => {
-    this.mql.addEventListener('change', this.toggleColorScheme);
+    this.mql.addEventListener('change', this.setColorScheme);
   }
 
   componentWillUnmount = () => {
-    this.mql.removeEventListener('change', this.toggleColorScheme);
+    this.mql.removeEventListener('change', this.setColorScheme);
   }
 
   render = () => (
