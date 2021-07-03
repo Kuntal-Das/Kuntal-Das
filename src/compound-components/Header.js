@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, Logo, NavLink, StyledHeader, StyledNav, ToggleThemeButton } from '../../components';
+import { Link, Logo, NavLink, StyledHeader, StyledNav, ToggleThemeButton } from '../components';
 
 export default class Header extends Component {
     render = () => {

@@ -2,6 +2,8 @@ import styled, { css } from "styled-components";
 import { Link as ReactRouterLink, NavLink as ReactRouterNavLink } from "react-router-dom"
 import { ReactComponent as SvgLogo } from '../svgs/logo.svg';
 
+// Header Container
+
 export const ToggleThemeButton = styled.button.attrs(props => ({
     type: "button" || props.type,
 }))`
@@ -83,3 +85,6 @@ export const StyledHeader = styled.header.attrs(props => ({
         justify-self: end;
     }  
 `;
+
+
+//Hero Container 
