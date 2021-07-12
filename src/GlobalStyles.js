@@ -14,11 +14,15 @@ export const GlobalStyles = createGlobalStyle`
     
     body{
         block-size: 100%;
-        ${({ theme }) => css`
-            background-color: ${theme.surface1};
-            color: ${theme.brand};
-            font-family: ${theme.ffPrimary};
+        font-size: 0.8rem;
+            
+        @media (min-width:600px){
             font-size: 1rem;
+        }
+        
+        ${({ theme }) => css`
+            background-color: ${theme.surface2};
+            font-family: ${theme.ffPrimary};
         `}
     }
 `;

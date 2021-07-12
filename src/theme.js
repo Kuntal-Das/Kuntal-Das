@@ -9,7 +9,7 @@ export const getThemes = () => {
 		id: "1",
 		name: "light",
 		brand: `hsl(${foundation.brandHue} ${foundation.brandSaturation} ${foundation.brandLightness})`,
-		text1: `hsl(${foundation.brandHue} ${foundation.brandSaturation} 10%)`,
+		text1: `hsl(${foundation.brandHue} calc(${foundation.brandSaturation} / 2) 10%)`,
 		text2: `hsl(${foundation.brandHue} 30% 30%)`,
 		surface1: `hsl(${foundation.brandHue} 25% 90%)`,
 		surface2: `hsl(${foundation.brandHue} 20% 99%)`,
@@ -40,14 +40,13 @@ export const getThemes = () => {
 		fwSemiBold: 600,
 		fwBold: 700,
 		fwBlack: 900,
-		fsRegular: "1rem",
-		fsMedium: "0.875rem",
-		fsSmall: "0.75rem",
-		fsH1: "3rem",
-		fsH2: "2.5rem",
-		fsH3: "1.75rem",
-		fsH5: "1.5rem"
-
+		fsRegular: "clamp(0.875rem, 0.8250rem + 0.2000vw, 1rem)",
+		fsMedium: "clamp(0.75rem, 0.7000rem + 0.2000vw, 0.875rem)",
+		fsSmall: "clamp(0.625rem, 0.5750rem + 0.2000vw, 0.75rem)",
+		fsH1: "clamp(2rem, 1.6000rem + 1.6000vw, 3rem)",
+		fsH2: "clamp(1.875rem, 1.6250rem + 1.0000vw, 2.5rem)",
+		fsH3: "clamp(1.5rem, 1.4000rem + 0.4000vw, 1.75rem)",
+		fsH5: "clamp(1.25rem, 1.1500rem + 0.4000vw, 1.5rem)"
 	}
 
 	const shadow = {

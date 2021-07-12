@@ -54,7 +54,6 @@ class App extends Component {
 
   render = () => (
     <ThemeProvider theme={{ ...this.state.theme }}>
-      <GlobalStyles />
       <BrowserRouter>
         <HeaderContainer toggleColorScheme={this.toggleColorScheme} />
         <Switch>
@@ -72,6 +71,7 @@ class App extends Component {
           </Route>
         </Switch>
       </BrowserRouter>
+      <GlobalStyles />
     </ThemeProvider>
   );
 }
