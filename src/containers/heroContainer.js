@@ -1,6 +1,6 @@
 import React from "react"
 import { Hero } from "../compound-components"
-// import { ReactComponent as WorkingInLaptop } from "../svgs/workingInLaptop.svg"
+import {ReactComponent as HeroIllustration} from "../svgs/workingInLaptop.svg"
 
 export default function HeroContainer() {
     return (
@@ -13,9 +13,8 @@ export default function HeroContainer() {
                     <Hero.ButtonLink to="/about">About Me</Hero.ButtonLink>
                 </Hero.FlexCol>
             </Hero.Group>
-
             <Hero.Illustration>
-                {/* <WorkingInLaptop /> */}
+                <HeroIllustration/>
             </Hero.Illustration>
         </Hero>
     )

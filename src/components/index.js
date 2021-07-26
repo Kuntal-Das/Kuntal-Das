@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components";
 import { Link as ReactRouterLink, NavLink as ReactRouterNavLink } from "react-router-dom"
 import { ReactComponent as SvgLogo } from '../svgs/logo.svg';
-import { ReactComponent as WorkingInLaptop } from "../svgs/workingInLaptop.svg"
 
 // Header Container
 
@@ -90,7 +89,6 @@ export const StyledHeader = styled.header.attrs(props => ({
     }  
 `;
 
-
 //Hero Container 
 
 export const TitleH1 = styled.h1`
@@ -166,24 +164,7 @@ export const ButtonLink = styled(ReactRouterLink).attrs(props => ({
     @media (min-width: 600px) and (max-width:660px){
         padding: 0.65em 1.5em;
     }
-`
-
-export const HeroIllustration = styled(WorkingInLaptop)`
-    /* height: 100%; */
-    /* color: ${({ theme }) => theme.brand}; */
-    /* color: hsl(235 100% 60%); */
-    width: 100%;
-    color: #6257DB;
-    @media (max-width: 599px){
-        width: 80%;
-        max-width: 400px;
-    }
-
-    .outline_black{
-        stroke:${({ theme }) => theme.text2};
-    }
-
-`
+`;
 
 export const FlexCol = styled.div.attrs(props => ({
     right: props.right || "false"
@@ -222,9 +203,26 @@ export const Illustration = styled.div`
     position: relative;
     display: flex;
     justify-content: center;
+
+    svg{
+        /* height: 100%;
+        color: ${({ theme }) => theme.brand};
+        color: hsl(235 100% 60%); */
+        width: 100%;
+        color: #6257DB;
+        @media (max-width: 599px){
+            width: 80%;
+            max-width: 400px;
+        }
+
+        .outline_black{
+            stroke:${({ theme }) => theme.name === "light" ? "black" : "black"};
+            stroke-width: 2;
+        }
+    }
 `;
 
-export const StyledHero = styled.section.attrs(props => ({
+export const Section = styled.section.attrs(props => ({
     maxWidth: props.maxWidth || "1200px",
 }))`
     padding: 3.5em 0;
