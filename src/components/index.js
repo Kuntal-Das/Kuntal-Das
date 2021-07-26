@@ -204,7 +204,7 @@ export const Illustration = styled.div`
     display: flex;
     justify-content: center;
 
-    svg{
+    svg, img{
         /* height: 100%;
         color: ${({ theme }) => theme.brand};
         color: hsl(235 100% 60%); */
